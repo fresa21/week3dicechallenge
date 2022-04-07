@@ -5,7 +5,7 @@ let result = document.getElementById("result")
 button.addEventListener ("click", () => {
     
         let roll = Math.floor(Math.random)*6 + 1;
-         score += roll;
+        result = score+=roll
 
     if (roll == 1) {
         result.textContent = `${result}You have lost the game`;
@@ -18,4 +18,5 @@ button.addEventListener ("click", () => {
 
             }
             button.addEventListener('click',roll());
+        
         })
